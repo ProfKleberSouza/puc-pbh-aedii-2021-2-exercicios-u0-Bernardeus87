@@ -1,8 +1,13 @@
 #include <stdio.h>
 
 int main() {
-   int n1, n2;
-   scanf("%i %i", &n1, &n2);
-   printf("SOMA = %i\n", n1+n2);
+   float a, b, c, d;
+   scanf("%f %f %f %f", &a, &b, &c, &d);
+   if(((a+b+c+d)/4)>=6){
+    printf("NOTA = %.1f (APROVADO)", (a+b+c+d)/4);
+   }
+   else{
+    printf("NOTA = %.1f (REPROVADO)", (a+b+c+d)/4);
+   }
    return 0;
 }
